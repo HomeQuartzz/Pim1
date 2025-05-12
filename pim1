@@ -4,7 +4,7 @@ while True:
   nome = input("")
   
   print(f"""=== Seja bem vindo(a) {nome}! ===
---- Nessa expepêriencia você vai compreender sobre fluxograma e pseudocódigo! ---""")
+--- Nessa expepêriencia você vai aprender um pouco sobre fluxograma e pseudocódigo! ---""")
   
   while True:
    print("- Para prosseguir, digite sua idade. -")
