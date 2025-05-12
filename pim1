@@ -1,0 +1,120 @@
+while True:
+ while True:
+  print ("=== Olá, qual seu nome? ===")
+  nome = input("")
+  
+  print(f"""=== Seja bem vindo(a) {nome}! ===
+--- Nessa expepêriencia você vai aprender um pouco sobre fluxograma e pseudocódigo! ---""")
+  
+  while True:
+   print("- Para prosseguir, digite sua idade. -")
+   
+   idade = int(input())
+   if idade < 5 or idade > 100:
+     print("Idade inválida")
+     continue
+   else:
+     break
+   
+ 
+  print ("=== Você permite que seus dados sejam utilizados para uma análise de estatística? ===")
+  
+  while True:
+   p = input("Digite Sim ou Não: ").lower()  #p de permissão
+   if p == "sim":
+     break
+   elif p == "não":
+     break 
+   else:
+     print("Opção inválida")
+     continue
+  if p == "sim":
+   break
+  else:
+    print("Precisamos da sua permissão para continuar.")
+    continue
+
+
+ print ("""-------------------------------------------------------------------------------------------------------------------------------------------
+A tecnologia da informação (TI) é responsável pela organização, proteção e processamento de dados. Os profissionais dessa área atuam
+com os hardwares (os componentes de um computador), dados e softwares (processamento, sistemas operacionais). A tecnologia da informação
+está presente em diversas empresas, bancos, hospitais, escolas e etc. A fim de trazer segurança e sistemas funcionais.
+-------------------------------------------------------------------------------------------------------------------------------------------""")
+
+ while True: 
+  c = int(input('Digite "1" para continuar: ')) #c de continuar
+ 
+  if c == 1:
+   break
+  else:
+    print("Valor inválido.")
+
+ z = True
+ while True:
+  
+  if z == True:
+    print (f"""===========================================
+Sobre o que gostaria de aprender, {nome}?
+ 1- Fluxogramas
+ 2- Pseudocódigos
+=========================================== """)
+  
+    o = input('Digite uma opção: ') #o de opção
+  
+    if o == "1":
+       print("""------------------------------------------------------------------------------------------------------------------------------
+Fluxograma é uma forma de visualizar uma sequência de etapas, com setas e formas você pode definir ideias, 
+qual fase vem primeiro ou depois, também definir quando uma etapa volta para outra, por exemplo:
+
+   Início →   Dar boas vindas ao usuário →   Perguntar se ele quer continuar →   "Usuário decide continuar"
+                                                            ↓                               ↓
+                         ↑     ⭠       ⭠        ⭠ "Usuário decide sair"         Continuar apresentação...
+   
+A finalidade deste método é mapear as possibilidades, deixando o planejamento de um projeto de 
+forma mais simples e organizada.
+------------------------------------------------------------------------------------------------------------------------------""")  #texto sobre fluxograma
+       o = input ('''Digite qualquer coisa para continuar!
+''')
+       z = False
+  
+    elif o == "2":
+       print("""------------------------------------------------------------------------------------------------------------------------------
+Pseudocódico é uma forma de planejamento para programação, criando códigos de forma simplificada e sem limitações,
+usando português ou qualquer forma de expressão. Pode ser utilizado para criar a lógica por trás de um programa, mostrar de forma 
+mais clara e objetiva sobre o resultado desejado. Por exemplo:
+
+Usando pseudocódigo: Escreva: "Olá" 
+                     Pergunte: "Qual seu nome?" 
+                     Depois pergunte: "Tudo bem, (nome da pessoa)"  
+                     
+Transcrevendo para um Código de Python: 
+
+print("Olá")
+nome = input("Qual seu nome?")
+input(f"Tudo bem, { nome }")
+             
+funções: print: escreve algo na tela.                
+print: escreve algo na tela.                         
+input: o usuário digita algo para ser armazenado.    
+nome: é uma variável que muda de acordo com o que o usuário digita.
+f: serve para "printar" o dado armazenado na variável que esta entre {}
+------------------------------------------------------------------------------------------------------------------------------""")#texto sobre pseudocódigo
+       
+       o = input ('''Digite qualquer coisa para continuar!
+''')
+       z = False
+     
+    else:
+       print("Opção inválida")
+       continue
+
+  elif z == False:
+    print ('''===== Se quiser voltar ao menu, digite "menu" ou se quiser sair, digite "sair" =====''')
+    p = input(": ").lower()
+ 
+    if p == 'menu':
+      z = True
+ 
+    elif p == "sair":
+      print("==== Esperamos que tenha gostado da experiência! ====")
+      break
